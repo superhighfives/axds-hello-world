@@ -10,8 +10,8 @@ The directory structure looks like this:
 scripts/
   └── start-server.mjs  // create and start server
 src/
-  ├── assets/           // static assets
-  │   └── recipes-logo.png
+  ├── layouts/          // layouts
+  │   └── main.html
   └── modules/          // lwc modules
       └── example/
           └── app/
