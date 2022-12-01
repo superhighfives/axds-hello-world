@@ -1,0 +1,20 @@
+{
+    "lwc": {
+        "modules": [
+            {
+                "dir": "$rootDir/src/modules"
+            },
+            {
+                "npm": "@oneappexchange/appx-design-system"
+            }
+        ]
+    },
+    "routes": [
+        {
+            "id": "home",
+            "path": "/",
+            "rootComponent": "home/app",
+            "layoutTemplate": "$layoutsDir/main.html"
+        }
+    ]
+}
