@@ -1,6 +1,6 @@
-# LWC-TS Boilerplate Example
+# AXDS Hello World
 
-The **LWC TS Boilerplate** example contains the minimum code needed to get a simple Single Page Application (SPA) on LWR running in Typescript.
+The **AXDS Hello World** example contains the minimum code needed to get a simple Single Page Application (SPA) on LWR running in Typescript, with [AXDS](https://github.com/OneAppExchange/appx-design-system).
 
 ## Project Setup
 
@@ -20,6 +20,7 @@ src/
               └── app.ts
 lwr.config.json         // lwr configuration
 package.json            // npm packaging configuration
+.npmrc                  // npm setup information
 ```
 
 ## Configuration
@@ -29,15 +30,26 @@ The LWR server is configured in `lwr.config.json`, at the root of the project. T
 ```json
 // lwr.config.json
 {
-    "lwc": { "modules": [{ "dir": "$rootDir/src/modules" }] },
+    "lwc": {
+        "modules": [
+            {
+                "dir": "$rootDir/src/modules"
+            },
+            {
+                "npm": "@oneappexchange/appx-design-system"
+            }
+        ]
+    },
     "routes": [
         {
-            "id": "example",
+            "id": "home",
             "path": "/",
-            "rootComponent": "example/app"
+            "rootComponent": "home/app",
+            "layoutTemplate": "$layoutsDir/main.html"
         }
     ]
 }
+
 ```
 
 ## Running the Project
