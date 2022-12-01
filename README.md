@@ -28,7 +28,6 @@ package.json            // npm packaging configuration
 The LWR server is configured in `lwr.config.json`, at the root of the project. The **LWC TS Boilerplate** example has one LWC module and one server-side route.
 
 ```json
-// lwr.config.json
 {
     "lwc": {
         "modules": [
