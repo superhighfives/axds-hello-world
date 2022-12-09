@@ -55,7 +55,6 @@ The LWR server is configured in `lwr.config.json`, at the root of the project. T
 
 ```bash
 yarn install
-yarn build
 yarn start # prod mode and ESM format
 ```
 
